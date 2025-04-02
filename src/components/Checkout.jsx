@@ -29,20 +29,20 @@ const Checkout = () => {
         }
 
         const options = {
-            key: "rzp_test_AWrlyaXOO9ncih", // This is Api key. you will get it from razorpay dashboard > account and settings > API keys
+            key: "rzp_test_vzN8hoKk1JAewx", // This is Api key. you will get it from razorpay dashboard > account and settings > API keys
             amount: parseInt(totalAmount * 100),
             currency: "INR", // your 3 letter currency code
-            name: "Umang Bhalodiya", // project or transaction name
+            name: "Ecommerce", // project or transaction name
             description: "Test Transaction",
             image: "https://avatars.githubusercontent.com/u/76506184?v=4", // your project logo
             handler: function (response) {
-              // console.log("response", response);
+              console.log("response razor payyy", response);
               orderPlace(); // after payment completes on stripe this function will be called and you can do your stuff
             },
             prefill: {
-              name: "Umang Bhalodiya",
-              email: "umangbhalodiya660@gmail.com",
-              contact: "9988556633",
+              name: "Vikky Mishra",
+              email: "vikky890@gmail.com",
+              contact: "99810306789",
             },
             notes: {
               address: "India",
