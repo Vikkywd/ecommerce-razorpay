@@ -15,8 +15,6 @@ import NotFound from './pages/NotFound'
 
 function App() {
   const [isLogin , setIsLogin] = useState(false);
-  console.log('isLogin: ', isLogin);
-
   useEffect(()=>{
     const user = localStorage.getItem('userData');
     if(user){
